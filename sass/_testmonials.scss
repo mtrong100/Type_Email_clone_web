@@ -1,0 +1,78 @@
+.testmonials {
+  margin-bottom: 154px;
+  &-heading {
+    max-width: 596px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 76px;
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 77px;
+  }
+  &-banner {
+    height: 470px;
+    width: 100%;
+    max-width: 502px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 3px solid #b0b0b0;
+      border-radius: 42px;
+    }
+  }
+  &-content {
+    flex: 1;
+    max-width: 571px;
+    width: 100%;
+  }
+  &-text {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: calc(40 / 23);
+    color: var(--gray1e);
+    margin-bottom: 27px;
+  }
+  &-name {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: calc(22.26 / 16);
+    color: #7d7d7d;
+    margin-bottom: 14px;
+  }
+  &-stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+  }
+  &-rating {
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    &-item {
+      flex-direction: column-reverse;
+    }
+    &-banner {
+      position: relative;
+    }
+    .owl-theme .owl-nav {
+      display: none;
+    }
+    &-banner {
+      height: auto;
+    }
+    .owl-dots {
+      margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &-heading {
+      margin-bottom: 40px;
+    }
+  }
+  
+}

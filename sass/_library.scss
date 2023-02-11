@@ -1,0 +1,128 @@
+.library {
+  margin-bottom: 141px;
+  &-top {
+    max-width: 683px;
+    margin: 0 auto;
+  }
+  &-heading {
+    text-align: center;
+    margin-bottom: 11px;
+  }
+  &-desc {
+    max-width: 326px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &-action {
+    margin-top: 32px;
+    margin-bottom: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  &-tab {
+    padding: 12px 25px;
+    color: var(--gray1e);
+    background-color: transparent;
+    transition: 0.2s linear;
+    &.active {
+      color: #dfff1b;
+      background-color: var(--gray1e);
+    }
+    &:hover {
+      color: #dfff1b;
+      background-color: var(--gray1e);
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    // grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 58px;
+  }
+  &-item:hover &-info {
+    padding: 25px 43px;
+    background-color: #fff;
+    box-shadow: 0px 7px 250px 3px #e3dac6;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+  }
+  &-info {
+    padding-top: 20px;
+    transition: 0.3s linear;
+    transition-delay: 0.1s;
+    &.active {
+      padding: 25px 43px;
+      background-color: #fff;
+      box-shadow: 0px 7px 250px 3px #e3dac6;
+      border-bottom-left-radius: 17px;
+      border-bottom-right-radius: 17px;
+    }
+  }
+  &-img {
+    width: 100%;
+    height: 227px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: 17px;
+      border-top-right-radius: 17px;
+    }
+  }
+
+  &-title {
+    font-size: 17.67px;
+    font-weight: 600;
+    line-height: calc(22.26 / 17.67);
+    color: var(--primary-color);
+  }
+  &-text {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: calc(32 / 22);
+    color: var(--gray1e);
+    max-width: 199px;
+  }
+  &-btn {
+    color: #fff;
+    gap: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 34px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media screen and (max-width: 767.98px) {
+    &-list {
+      grid-template-columns: 1fr;
+    }
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+    &-info {
+      padding: 25px 43px;
+      background-color: #fff;
+      box-shadow: 0px 7px 250px 3px #e3dac6;
+      border-bottom-left-radius: 17px;
+      border-bottom-right-radius: 17px;
+    }
+    &-btn {
+      display: flex;
+    }
+    &-top {
+      text-align: center;
+    }
+    &-action {
+      gap: 0;
+    }
+    &-tab {
+      padding: 12px 15px;
+    }
+  }
+}

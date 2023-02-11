@@ -1,0 +1,46 @@
+.feature {
+  position: relative;
+  margin-top: 168px;
+  margin-bottom: 268px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  &-content {
+    flex: 1;
+    max-width: 548px;
+    width: 100%;
+  }
+  &-banner {
+    flex-shrink: 0;
+  }
+  &-title {
+    margin-bottom: 18px;
+  }
+  &-small {
+    max-width: 508px;
+    margin-bottom: 28px;
+  }
+  &-desc {
+    max-width: 416px;
+    margin-bottom: 51px;
+  }
+  &-btn {
+    padding: 16px 58px;
+    color: #fff;
+  }
+  @media screen and (max-width: 1023.98px) {
+    margin-bottom: 100px;
+    &-container {
+      flex-direction: column;
+    }
+    &-banner {
+      margin-bottom: 101px;
+      &::after {
+        transform: translateY(-75%);
+      }
+    }
+  }
+}
